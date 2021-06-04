@@ -1,0 +1,70 @@
+
+body{ /*Remove white bar at top and sides*/
+    padding: 0;
+    margin: 0;
+    background: cornsilk;
+    overflow-x: hidden;
+}
+
+
+.movieBorderBox{
+    width: 1000px;
+    height: 520px;
+    border: 1px solid rgb(36, 79, 199);
+    margin: 1% 50% 0 25%;
+    background: rgb(146, 120, 120);
+    border-width: 8px;  
+    opacity: 0.6;  
+
+}
+.movieBorderBox::before{
+    border-width: 30px;
+    border-color: tomato;
+    bottom: 100%;
+    left: 50%;
+}
+
+.frontTitle{
+    text-align: center;
+}
+
+#movieInput{
+margin-top: 125px;
+margin-left: 300px;
+
+
+}
+#movieTitleInput{
+    height: 25px;
+    width: 300px;
+}
+
+#submitMovie{
+    height: 75px;
+    width: 150px;
+    font-size: 20px;
+    border-radius: 20%;
+    background: rgb(167, 95, 28);
+}
+    
+
+#showcase{
+    min-height: 35vh;
+}
+
+#nxtPage{
+    width: 25px;
+    height: 25px;
+    margin-left: 50px;
+}
+
+#footer{
+    position: fixed;
+    padding: 10px 10px 10px 10px;
+    bottom: 0;
+    background: chocolate;
+    text-align: center;
+    width: 100%;
+    height: 1%;
+    opacity: 0.2;
+}
