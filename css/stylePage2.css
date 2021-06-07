@@ -1,0 +1,66 @@
+#titlePage2{
+    text-align: center;
+}
+
+#page2List{
+    margin-left: 5%;
+    margin-top: 20%;
+    border: 1px solid black;
+    width: 850px;
+    font-size: 20px;
+    font-family:Georgia, 'Times New Roman', Times, serif;
+    }
+    
+    #borderDiv{
+        border: 2px solid rgb(8, 8, 8);
+        background-color:rgb(184, 184, 184);
+        height: 550px;
+        width: 50%;
+        margin-top: 2%;
+        margin-left: 25%; 
+    }
+    
+    li{
+    margin: 10px 0;
+    }
+    
+    #ul button{
+        height: 40px;
+        width: 40px;
+        border-radius: 50%;
+    
+    
+    }
+    
+    label ~ button{
+    border-radius: 50%;
+    height: 25px;
+    width: 25px;
+    } 
+    
+    label ~ button:hover{
+        background-color: black;
+        color: white;
+    }
+    
+    
+    
+    #btnContainer{
+        
+    }
+    #backBtn{
+    margin-left: -40%;
+    margin-top: -10%;
+    width: 150px;
+    height: 70px;
+    font-size: 25px;
+    border-radius: 10%;
+    cursor: pointer;
+    transition-duration: 0.4;
+    }
+    #backBtn:hover{
+        background-color:rgb(8, 28, 94);
+        color: rgb(180, 175, 175);
+        border: 2px solid rgb(6, 84, 148);
+    }
+    

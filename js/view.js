@@ -1,10 +1,8 @@
+
 View();
 function View(){
     html = `
-    <section id="showcase" style="background-image:url('${bannerCarousel[next]}')">
-            <div></div>
-            
-        </section>
+    
         <h1 class="frontTitle">Personal Movie Watchlist</h1>
         <div class="movieBorderBox">
         <form id="movieInput">
@@ -17,22 +15,28 @@ function View(){
             html += `<option>${model.movieView.genres[i]}</option>`;
         }
         html += `</select>
-        
+        <br>
         <input id="submitMovie" type="submit" value="Legg til i liste">
-        <button onclick="location.href ='movieList.html'">Next page!</button>
 
       </form>      
+      <button id="nxtBtn" onclick="showmovieListView()"><span>next page</span></button>
+
+        <img id="moviePic1" src="/img/moviePic.png"
         </div>
-        <button id="nxtPage" onclick="location.href='movieList.html'"heo</button>
         
-        <div id="footer">
-        <p> Movie List 2021</p>
-        </div>
+
+        
 
 
     `;
 
     document.getElementById("infoDiv").innerHTML = html;
 
-    showBannerImgs();
+    // showBannerImgs();
 }
+
+
+{/* <section id="showcase" style="background-image:url('${bannerCarousel[next]}')">
+            <div></div>
+            
+        </section> */}
