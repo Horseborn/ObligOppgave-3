@@ -24,7 +24,7 @@ function showBannerImgs(){
 } 
 
 function nxtPic(){
-    if (next == 8){
+    if (next == 6){
         next = -1
     }
     next++

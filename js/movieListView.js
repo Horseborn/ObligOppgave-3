@@ -6,12 +6,12 @@ function showmovieListView(){
         <div id="page2List">
         
                 <ul id="unseenMovies">
-                <li><label>Eat bread 2915 Edition</label><button class="delete"><b>X</b></button></li>
-                <li><label>Eat bread 2915 Edition</label><button class="delete"><b>X</b></button></li>
-                <li><label>Eat bread 2915 Edition</label><button class="delete"><b>X</b></button></li>
-                <li><label>Eat bread 2915 Edition</label><button class="delete"><b>X</b></button></li>
-                <li><label>Eat bread 2915 Edition</label><button class="delete"><b>X</b></button></li>
-                <li><label>Eat bread 2915 Edition</label><button class="delete"><b>X</b></button></li>
+                <li><label>wersdf</label><button class="delete"><b>X</b></button></li>
+                <li><label>Movie3</label><button class="delete"><b>X</b></button></li>
+                <li><label>Movi3e4</label><button class="delete"><b>X</b></button></li>
+                <li><label>Movie342</label><button class="delete"><b>X</b></button></li>
+                <li><label>Movie5123</label><button class="delete"><b>X</b></button></li>
+                <li><label>Muror</label><button class="delete"><b>X</b></button></li>
    
             
             </ul>
