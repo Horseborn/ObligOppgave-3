@@ -23,5 +23,7 @@ function addMovie(){
 
 
 function deleteMovie(i){
+  model.movieView.movies.splice(i, 1);
+  showmovieListView();
 
 }

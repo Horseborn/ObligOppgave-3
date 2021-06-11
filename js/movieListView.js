@@ -2,12 +2,17 @@ function showmovieListView(){
 
    html = '';
 
+    html += `
+    <h1 id="titlePage2">Personal Movie List</h1>`;
+
     for(let i = 0; i< model.movieView.movies.length; i++){
-        html +=  `<div id="borderDiv">
-                <h1 id="titlePage2">Personal Movie List</h1>
+        html +=  `
+        
+        <div id="borderDiv">
+                
             <div id="page2List">
                 <ul id="unseenMovies">
-                    <li>${model.movieView.movies[i].name}<br> ${model.movieView.movies[i].genres}<button class="delete" onclick="deleteMovie()"><b>X</b></button></li>
+                    <li><b>Tittel</b>: ${model.movieView.movies[i].name}<br><b>Sjanger: </b>  ${model.movieView.movies[i].genres}<button class="delete" onclick="deleteMovie(${i})"><b>X</b></button></li>
 
                 </ul>
 
