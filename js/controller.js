@@ -9,6 +9,19 @@
 //     next++
 //      View();
 // }
+function addMovie(){
+  let movieObj = {
+      name: model.input.movieInput,
+      genres: model.input.genre,
+  }  
+  model.movieView.movies.push(movieObj)
+  if (model.input.genre == ''){
+    
+  }
+  View();
+}
 
 
+function deleteMovie(i){
 
+}

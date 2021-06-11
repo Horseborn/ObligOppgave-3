@@ -20,49 +20,56 @@ const model = {
 
 
     input:{
-        movieWrite: {
-            movieInput: '',
-
-        },
-
         
-
-      
-
+            movieInput: '',
+            genre:'',
     },
     movieView: {
         movies: [
             {
             id: 001,
-            name: 'Midsommar',
-            haveSeen: false
+            name: '',
+            haveSeen: false,
+            genres: ''
+            
 
             },
-            {
-                id: 002,
-                name: '',
-                haveSeen: false
-            },
-            {
-                id: 003,
-                name: '',
-                haveSeen: false
-            },
-            {
-                id: 004,
-                name: '',
-                haveSeen: false
-            },
-            {
-                id: 005,
-                name: '',
-                haveSeen: false
-            },
-            {
-                id: 006,
-                name: '',
-                haveSeen: false
-            }
+            // {
+            //     id: 002,
+            //     name: '',
+            //     haveSeen: false,
+            //     genres: 'Action'
+
+
+            // },
+            // {
+            //     id: 003,
+            //     name: '',
+            //     haveSeen: false,
+            //     genres: 'Fantasy'
+
+            // },
+            // {
+            //     id: 004,
+            //     name: '',
+            //     haveSeen: false,
+            //     genres: 'Thriller'
+
+            // },
+            // {
+            //     id: 005,
+            //     name: '',
+            //     haveSeen: false,
+            //     genres: 'Documentary'
+
+            // },
+            // {
+            //     id: 006,
+            //     name: '',
+            //     haveSeen: false,
+            //     genres: 'Horror'
+
+            // }
 
 
 

@@ -5,20 +5,20 @@ function View(){
     
         <h1 class="frontTitle">Personal Movie Watchlist</h1>
         <div class="movieBorderBox">
-        <form id="movieInput">
+        <div id="movieInput">
         <label for="movieInput">Film Tittel: </label>
-        <input type="text" id="movieTitleInput" name="movieInput"><br><br>
+        <input type="text" id="movieTitleInput" oninput="model.input.movieInput = this.value" name="movieInput"><br><br>
         <br><br>
         <label for="genres">Velg sjanger</label>
-        <select name="genres" id="genres">`;
+        <select onchange="model.input.genre = this.value" name="genres" id="genres">`;
         for (let i = 0; i < model.movieView.genres.length; i++){
-            html += `<option>${model.movieView.genres[i]}</option>`;
+            html += `<option >${model.movieView.genres[i]}</option>`;
         }
         html += `</select>
         <br>
-        <input id="submitMovie" type="submit" value="Legg til i liste">
+        <button id="submitMovie" onclick="addMovie()">Legg til i liste</button>
 
-      </form>      
+      </div>      
       <button id="nxtBtn" onclick="showmovieListView()"><span>next page</span></button>
 
         <img id="moviePic1" src="/img/moviePic.png"
@@ -40,3 +40,7 @@ function View(){
             <div></div>
             
         </section> */}
+
+
+
+        // <input id="submitMovie" type="submit" value="Legg til i liste"></input>

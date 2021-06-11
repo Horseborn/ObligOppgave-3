@@ -67,6 +67,9 @@ margin-left: 300px;
 #submitMovie{
     margin-top: 5%;
     margin-left: 25%;
+    border-radius: 0;
+    height: 25px;
+    width: 100px;
 
     
 }
