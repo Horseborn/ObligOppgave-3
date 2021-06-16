@@ -26,7 +26,7 @@ function View(){
       </div>      
       <button id="nxtBtn" onclick="showmovieListView()"><span>next page</span></button>
 
-        <img id="moviePic1" src="/img/moviePic.png"
+        <img id="moviePic1" src="./img/moviePic.png"
         </div>
         
 
