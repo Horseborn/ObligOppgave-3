@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width" />
+    <title>QUnit Example</title>
+    <link
+      rel="stylesheet"
+      href="https://code.jquery.com/qunit/qunit-2.9.2.css"
+    />
+  </head>
+
+  <body>
+    <div id="qunit"></div>
+    <div id="qunit-fixture"></div>
+    <script src="https://code.jquery.com/qunit/qunit-2.9.2.js"></script>
+    <script src="/js/controller.js"></script>
+    <script src="/js/model.js"></script>
+    <script>
+
+
+        function View(){}
+        function showmovieListView(){}
+
+        QUnit.test("check if movie added", function (assert) {
+          model.input.movieInput = 'Sebastian Film';
+          model.input.genre = 'Horror';
+          let expected = {
+                  name: 'Sebastian Film',
+                  genres: 'Horror',
+                }
+                
+                
+                addMovie()
+                const actual = model.movieView.movies[0];
+                
+            assert.deepEqual(actual, expected);
+        });
+
+        QUnit.test("check if movie don't get added if no title", function (assert) {
+          model.input.movieInput = '';
+          model.input.genre = 'Horror';
+            
+                
+                
+                addMovie()
+                const expected = 0;
+                const actual = model.movieView.movies.length;
+                
+            assert.equal(actual, expected);
+        });
+
+        QUnit.test("check if movie don't get added if no genre", function (assert) {
+          model.input.movieInput = 'The hills have eyes';
+          model.input.genre = '';
+            
+                
+                
+                addMovie()
+                const expected = 0;
+                const actual = model.movieView.movies.length;
+                
+            assert.equal(actual, expected);
+        });
+        
+        QUnit.test("check if movie gets deleted", function (assert) {
+              model.movieView.movies = [1, 2, 3]
+              deleteMovie(1)
+                
+                
+                
+                const expected = [1, 3];
+                const actual = model.movieView.movies;
+                
+            assert.deepEqual(actual, expected);
+        });
+        
+
+    </script>

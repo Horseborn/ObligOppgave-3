@@ -50,6 +50,15 @@ background-position: center;
     margin-top: 0%;
 }
 
+#errorMsg {
+    margin-left: 135px;
+    font-size: 17px;
+    font-variant: small-caps;
+
+    
+    
+}
+
 #movieInput{
 margin-top: 125px;
 margin-left: 300px;
@@ -62,6 +71,7 @@ margin-left: 300px;
 }
 #genres{
     width: 300px;
+    cursor: pointer;
 }
 
 #submitMovie{
@@ -70,6 +80,7 @@ margin-left: 300px;
     border-radius: 0;
     height: 25px;
     width: 100px;
+    cursor: pointer;
 
     
 }
@@ -78,6 +89,8 @@ margin-left: 300px;
 
 #showcase{
     min-height: 35vh;
+    border-style:outset;
+    border-color: rgba(15, 15, 78, 0.61);
 }
 
 /*Animated button*/
@@ -104,6 +117,7 @@ transition: 0.5s;
 }
 #nxtBtn:hover span{
     padding-right: 25px;
+    cursor: pointer;
 }
 #nxtBtn:hover span:after{
     opacity: 1;

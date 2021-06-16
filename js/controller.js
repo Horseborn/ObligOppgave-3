@@ -10,14 +10,25 @@
 //      View();
 // }
 function addMovie(){
-  let movieObj = {
-      name: model.input.movieInput,
-      genres: model.input.genre,
-  }  
-  model.movieView.movies.push(movieObj)
-  if (model.input.genre == ''){
-    
+  
+ 
+   if(model.input.movieInput == ''){
+    model.errorMsg = 'You need to insert a title';
   }
+  if(model.input.genre == ''){
+    model.errorMsg = 'You need to insert a genre';
+  }
+
+ if(model.input.movieInput != '' && model.input.genre != '' ){
+  let movieObj = {
+    name: model.input.movieInput,
+    genres: model.input.genre,
+}  
+  model.movieView.movies.push(movieObj)
+  model.input.movieInput = '';
+  model.input.genre = '';
+  model.errorMsg = '';
+ }
   View();
 }
 

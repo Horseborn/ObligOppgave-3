@@ -4,9 +4,14 @@ function View(){
     html = `
     
         <h1 class="frontTitle">Personal Movie Watchlist</h1>
+
         <div class="movieBorderBox">
+
         <div id="movieInput">
+        <div id="errorMsg">${model.errorMsg || ''}</div>
+
         <label for="movieInput">Film Tittel: </label>
+
         <input type="text" id="movieTitleInput" oninput="model.input.movieInput = this.value" name="movieInput"><br><br>
         <br><br>
         <label for="genres">Velg sjanger</label>

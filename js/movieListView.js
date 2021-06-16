@@ -3,19 +3,21 @@ function showmovieListView(){
    html = '';
 
     html += `
-    <h1 id="titlePage2">Personal Movie List</h1>`;
+    
+    <h1 id="titlePage2">Personal Movie List</h1>
+    <div><button id="btnContainer" onclick="View()"><span>☚ Back to frontpage</span></button></div>`;
 
     for(let i = 0; i< model.movieView.movies.length; i++){
         html +=  `
         
-        <div id="borderDiv">
-                
-            <div id="page2List">
-                <ul id="unseenMovies">
-                    <li><b>Tittel</b>: ${model.movieView.movies[i].name}<br><b>Sjanger: </b>  ${model.movieView.movies[i].genres}<button class="delete" onclick="deleteMovie(${i})"><b>X</b></button></li>
-
-                </ul>
-
+        <div id="borderDivParent">
+            <div id="borderDiv">
+            
+                <div id="page2List">
+                    <ul id="unseenMovies">
+                        <li><b>Tittel</b>: ${model.movieView.movies[i].name}<br><b>Sjanger: </b>  ${model.movieView.movies[i].genres}<button class="delete" onclick="deleteMovie(${i})"><b>X</b></button></li>
+                    </ul>
+                </div>
             </div>
         </div>`
     } 
@@ -37,7 +39,7 @@ function showmovieListView(){
     //         </ul>
         
     //     </div>
-    html += `  <div id="btnContainer"><button onclick="View()">☚ Back to frontpage</button></div>`   ;
+    // html += `  <div id="btnContainer"><button onclick="View()">☚ Back to frontpage</button></div>`   ;
 
     // </div>
 
@@ -45,3 +47,7 @@ function showmovieListView(){
     document.getElementById("infoDiv").innerHTML = html;
 }
 //backBtn
+
+
+// html += `  <div id="btnContainer"><button onclick="View()">☚ Back to frontpage</button></div>`   ;
+//  <div id="btnContainer"><button onclick="View()">☚ Back to frontpage</button></div>   

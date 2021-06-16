@@ -1,6 +1,7 @@
 bannerView();
 function bannerView(){
     document.getElementById("bannerDiv").innerHTML = `
+    
     <div class="border_1">
         <div class="border_2">
         <section id="showcase" style="background-image:url('${bannerCarousel[next]}')">
@@ -20,11 +21,11 @@ function bannerView(){
 
 
 function showBannerImgs(){
-    setTimeout(nxtPic, 3000)
+    setTimeout(nxtPic, 4000)
 } 
 
 function nxtPic(){
-    if (next == 6){
+    if (next == 10){
         next = -1
     }
     next++
